@@ -3,7 +3,7 @@
 ## A novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species
 Developed by Guanjue Xiang, Yuchun Guo, David Bumcrot at CAMP4 Therapeutics Corp., Cambridge, MA, USA
 
-
+##
 **[(1) Summary](#Summary)**<br>
 #####
 **[(2) Citation](#Citation)**<br>
