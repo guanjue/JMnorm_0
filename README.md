@@ -21,7 +21,7 @@
 #####
 **[(9) Support](#Support)**<br>
 #####
-**[(10) License](#License)**<br>
+**[(10) LICENSE](#LICENSE)**<br>
 #####
 
 ## Summary
