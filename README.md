@@ -2,7 +2,6 @@
 
 ## A novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species
 
-### Outline
 **[(1) Summary](#Summary)**<br>
 #####
 **[(2) Citation](#Citation)**<br>
