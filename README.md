@@ -116,7 +116,7 @@ Detailed instructions on using JMnorm can be found in the [test_JMnorm.html](htt
 For questions or issues, please either create an issue on the GitHub repository or feel free to reach out via the following email addresses: gxiang@camp4tx.com, guanjuexiang@gmail.com
 
 
-## License
+## LICENSE
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/guanjue/JMnorm/blob/main/LICENSE) file for details.
 
 
