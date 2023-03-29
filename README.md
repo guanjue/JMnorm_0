@@ -91,7 +91,7 @@ conda activate jmnorm
 
 
 ## Running JMnorm
-Detailed instructions on using JMnorm can be found in the [test_JMnorm.html](https://guanjue.github.io/JMnorm/) R markdown file 
+Detailed instructions on using JMnorm can be found in the [Getting started with JMnorm](https://guanjue.github.io/JMnorm/) R markdown file 
 
 
 ## Output data after JMnorm
