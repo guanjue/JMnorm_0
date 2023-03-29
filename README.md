@@ -52,7 +52,7 @@ conda activate jmnorm
 
 # start R
 # source the script in R
-# source("JMnorm.script.R")
+# source("/path_to_JMnorm_folder/bin/JMnorm.script.R")
 ```
 
 
