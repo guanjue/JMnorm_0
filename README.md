@@ -57,7 +57,7 @@ conda activate jmnorm
 
 ## Input data
 - The input Target signal matrix and input Reference signal matrix should be formatted as N-by-(M+1) matrices, where N represents the number of cCREs, and M represents the number of chromatin features. The first column of each matrix contains the cCRE IDs. The signal values in orignal linear scale for each chromatin feature in the cCREs are saved in the 2~M columns.
-- Example input Target / Reference signal matrices can be found in these links [Target signal matrix](https://github.com/guanjue/JMnorm/blob/main/test_data/TCD8.JMnorm_sigmat.txt) & [Reference signal matrix](https://github.com/guanjue/JMnorm/blob/main/test_data/ref.raw_sigmat.txt).
+- Example input Target / Reference signal matrices can be found in these links [Target signal matrix](https://github.com/guanjue/JMnorm/blob/main/docs/TCD8.JMnorm_sigmat.txt) & [Reference signal matrix](https://github.com/guanjue/JMnorm/blob/main/docs/ref.raw_sigmat.txt).
 ```
 # Input reference signal matrix
 >>> head ref.raw_sigmat.txt 
@@ -96,7 +96,7 @@ Detailed instructions on using JMnorm can be found in the [test_JMnorm.html](htt
 
 ## Output data after JMnorm
 - The output target signal matrix after JMnorm should be formatted as N-by-(M+1) matrices, where N represents the number of cCREs, and M represents the number of chromatin features. The first column of each matrix contains the cCRE IDs. The signal values in orignal linear scale for each chromatin feature in the cCREs are saved in the 2~M columns.
-- Example output target signal matrix after JMnorm can be found in this [Target.JMnorm_sigmat.txt](https://github.com/guanjue/JMnorm/blob/main/test_data/TCD8.JMnorm_sigmat.txt).
+- Example output target signal matrix after JMnorm can be found in this [Target.JMnorm_sigmat.txt](https://github.com/guanjue/JMnorm/blob/main/docs/TCD8.JMnorm_sigmat.txt).
 ```
 >>> head TCD8.JMnorm_sigmat.txt
 1	0.068	0.05	0.099	0.025	0.002	-0.064	0.137
