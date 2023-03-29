@@ -91,7 +91,9 @@ conda activate jmnorm
 
 
 ## Running JMnorm
-Detailed instructions on using JMnorm can be found in the [Getting started with JMnorm](https://guanjue.github.io/JMnorm/) R markdown file 
+Detailed instructions on using JMnorm can be found in the [Getting started with JMnorm](https://guanjue.github.io/JMnorm/) R markdown file.
+The testing signal matrices can be found in this link: https://github.com/guanjue/JMnorm/tree/main/docs
+ 
 
 
 ## Output data after JMnorm
