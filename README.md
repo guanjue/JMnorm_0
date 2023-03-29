@@ -25,9 +25,7 @@
 #####
 
 ## Summary
-Combinatorial patterns of chromatin features reflect the functions of genomic regions in transcriptional regulation. However, technical noise from different epigenomic datasets can hinder the ability to extract true biological information. While many chromatin features, including chromatin accessibility and certain histone modifications, show correlated relationships, most existing approaches in data normalization and batch effect correction are designed to process each feature independently.  Such strategies can potentially introduce bias into the normalized data and lose the correlations among the chromatin features. 
-
-Here, we present a novel approach named Joint Multi-feature normalization (JMnorm), for simultaneously normalizing multiple chromatin features across cell types and species by borrowing information from partially correlated features. We demonstrate that epigenomic datasets normalized across cell types and species by our approach preserve the cross-feature correlations and have better consistency between biological replicates. In addition, the epigenomic datasets normalized by JMnorm can be used to predict gene expression with higher accuracy and to discover CTCF binding sites with higher enrichment at both boundaries of Topologically Associating Domains (TAD) and peak regions of CTCF-cobinding-factor YY1 than data normalized by other approaches.  This suggests that JMnorm is better at removing technical bias while preserving the true biological variation in the data. We expect that JMnorm will enable better utilization of epigenomic data in integrative and comparative studies of gene regulatory mechanisms.
+Combinatorial patterns of chromatin features reflect the functions of genomic regions in transcriptional regulation. However, technical noise from different epigenomic datasets can hinder the ability to extract true biological information. While many chromatin features, including chromatin accessibility and certain histone modifications, show correlated relationships, most existing approaches in data normalization are designed to process each feature independently. Such strategies can potentially introduce bias into the normalized data and lose the correlations among the chromatin features. Here, we present a novel approach named Joint Multi-feature normalization (JMnorm), for simultaneously normalizing multiple chromatin features across cell types and species by borrowing information from partially correlated features. 
 
 ## Citation
 Guanjue Xiang, Yuchun Guo, David Bumcrot. JMnorm: a novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species. 2023
@@ -93,7 +91,7 @@ conda activate jmnorm
 ## Running JMnorm
 Detailed instructions on using JMnorm can be found in the [Getting started with JMnorm](https://guanjue.github.io/JMnorm/) R markdown file.
 The testing signal matrices can be found in this link: https://github.com/guanjue/JMnorm/tree/main/docs
- 
+
 
 
 ## Output data after JMnorm
