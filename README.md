@@ -1,6 +1,8 @@
 # JMnorm      <img src="https://raw.githubusercontent.com/guanjue/JMnorm/main/Figs/CAMP4.svg" align="right" width="120"/>
 
 ## A novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species
+## Developed by Guanjue Xiang, Yuchun Guo, David Bumcrot at CAMP4 Therapeutics Corp., Cambridge, MA, USA
+
 
 **[(1) Summary](#Summary)**<br>
 #####
