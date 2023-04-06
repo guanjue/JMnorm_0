@@ -57,11 +57,12 @@ conda activate jmnorm
 
 
 ## Input data
-- The input Target signal matrix and input Reference signal matrix should be formatted as N-by-(M+1) matrices, where N represents the number of cCREs, and M represents the number of chromatin features. The first column of each matrix contains the cCRE IDs. The signal values in orignal linear scale for each chromatin feature in the cCREs are saved in the 2~M columns.
+- The input Target signal matrix and input Reference signal matrix should be formatted as N-by-(M+1) matrices, where N represents the number of cCREs, and M represents the number of chromatin features. The first column of each matrix contains the cCRE IDs. The signal values in orignal linear scale for each chromatin feature in the cCREs are saved in the 2~M columns. The first row each matrix contains the cCREids and the chromatin feature name of each column.
 - Example input Target / Reference signal matrices can be found in these links [Target signal matrix](https://github.com/guanjue/JMnorm/blob/main/docs/TCD8.JMnorm_sigmat.txt) & [Reference signal matrix](https://github.com/guanjue/JMnorm/blob/main/docs/ref.raw_sigmat.txt).
 ```
 # Input reference signal matrix
->>> head ref.raw_sigmat.txt 
+>>> head ref.raw_sigmat.txt
+cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 1	0.927	0	0	0	0	0	0
 2	0.235	0.17	0.023	0.611	0.014	0.062	0.038
 3	1.684	2.701	1.453	0.741	0.819	1.376	5.44
@@ -74,7 +75,8 @@ conda activate jmnorm
 10	1.364	0	0	0	0	0.315	0.062
 
 # Input target signal matrix
->>> head TCD8.raw_sigmat.txt 
+>>> head TCD8.raw_sigmat.txt
+cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 1	0	0	0	0	0	0	0
 2	0	0.104478	0	0	0	0.139552	0
 3	0.385093	2.3354	0	0	0	2.47516	6.02857
@@ -102,6 +104,7 @@ The testing signal matrices can be found in this link: https://github.com/guanju
 - Example output target signal matrix after JMnorm can be found in this [Target.JMnorm_sigmat.txt](https://github.com/guanjue/JMnorm/blob/main/docs/TCD8.JMnorm_sigmat.txt).
 ```
 >>> head TCD8.JMnorm_sigmat.txt
+cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 1	0.068	0.05	0.099	0.025	0.002	-0.064	0.137
 2	0.129	0.105	0.156	0.073	0.094	0.131	0.187
 3	0.341	2.493	0.269	0.006	0.435	0.984	4.906
