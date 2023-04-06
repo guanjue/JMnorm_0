@@ -8,7 +8,7 @@ output:
 ---
 ### JMnorm: a novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species
 ***
-##### Guanjue Xiang, Yuchun Guo, David Bumcrot
+##### Guanjue Xiang
 ##### CAMP4 Therapeutics Corp., Cambridge, MA, USA
 
 ***
