@@ -28,10 +28,10 @@ Guanjue Xiang, Yuchun Guo, Alla Sigova... at CAMP4 Therapeutics Corp., Cambridge
 #####
 
 ## Summary
-Combinatorial patterns of chromatin features reflect the functions of genomic regions in transcriptional regulation. However, technical noise from different epigenomic datasets can hinder the ability to extract true biological information. While many chromatin features, including chromatin accessibility and certain histone modifications, show correlated relationships, most existing approaches in data normalization are designed to process each feature independently. Such strategies can potentially introduce bias into the normalized data and lose the correlations among the chromatin features. Here, we present a novel approach named Joint Multi-feature normalization (JMnorm), for simultaneously normalizing multiple chromatin features across cell types and species by borrowing information from partially correlated features. 
+Combinatorial patterns of epigenetic features reflect transcriptional states. Existing normalization approaches may distort relationships between functionally correlated features by normalizing each feature independently. We present JMnorm, a novel approach that normalizes multiple epigenetic features simultaneously by leveraging information from correlated features. We show that JMnorm-normalized data preserve cross-feature correlations and combinatorial patterns of epigenetic features across cell types, improve cross-cell type gene expression prediction models, consistency between biological replicates, and detection of epigenetic changes upon perturbations. These findings suggest that JMnorm minimizes technical noise while preserving biologically relevant relationships between features. 
 
 ## Citation
-Guanjue Xiang, Yuchun Guo, David Bumcrot. JMnorm: a novel approach for Jointly Multi-feature normalization of epigenomic data across cell types and species. (2023)
+Guanjue Xiang, Yuchun Guo, David Bumcrot, Alla Sigova. a novel Joint Multi-feature normalization method for integrative and comparative epigenomics. (2023)
 
 
 ## JMnorm Overview
