@@ -28,6 +28,7 @@ Load Libraries
 start.time <- Sys.time()
 library(readr)
 library(pheatmap)
+library(dynamicTreeCut)
 ```
 
 Load JMnorm source code & setup working directory.
@@ -65,8 +66,10 @@ file_ref_sig0 = file_ref[,-1]
 
 Normalize signal to noise ratio (SNR) of reference signal matrix
 ```{r}
-# normalize signal to noise ratio (SNR) across features
+# normalize signal to noise ratio (SNR) across features (Optional)
 file_ref_sig = normalize_snr(file_ref_sig0)
+# if user decided to NOT normalize SNR across different features, then use the following command instead
+# file_ref_sig = file_ref_sig0
 
 # log2 transformation
 file_ref_sig_log2 = log2(file_ref_sig+add_sn)

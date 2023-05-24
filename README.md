@@ -117,6 +117,13 @@ cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 10	0.075	0.079	0.13	0.065	0.086	-0.101	0.179
 ```
 
+## ShinyApp for checking cross-feature correlation matrix in K562
+- Since JMnorm normalizes epigenetic data by leveraging information from functionally correlated epigenetic features, we anticipate that simultaneous normalization of highly correlated features can yield better improvements with JMnorm. To help users more effectively select features with better correlations for JMnorm analyses, we computed pairwise cross-feature correlations for 538 epigenetic features in K562 cells using data from the ENCODE Consortium. Considering the substantial size of the output correlation matrix and the difficulties with visualization, we also set up a ShinyApp visualization tool for convenient and interactive exploration of the correlation matrix.
+```
+# open "JMnorm/bin/shinyApp.show.ENCODE.heatmap.R" in R studio
+# change the file path to the "K562.raw_sigmat.mk.cor.txt" file
+# Run the commands in the "JMnorm/bin/shinyApp.show.ENCODE.heatmap.R" in R studio
+```
 
 ## Support
 For questions or issues, please either create an issue on the GitHub repository or feel free to reach out via the following email addresses: gxiang@camp4tx.com, guanjuexiang@gmail.com
