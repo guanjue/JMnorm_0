@@ -35,8 +35,8 @@ Guanjue Xiang, Yuchun Guo, David Bumcrot, Alla Sigova. a novel Joint Multi-featu
 
 
 ## JMnorm Overview
-![logo](https://raw.githubusercontent.com/guanjue/tmp_figs/master/figs/JMnorm.Figures1.png)
-Overview of the JMnorm normalization method: The method consists of four key steps. (A) Transform the correlated components of various epigenomic signals into a mutually independent, high-dimensional PCA space. Each column on the left represents the average signal vector of a specific chromatin feature at cCRE regions in the reference or target sample. The columns on the right display the corresponding transformed PCA signal matrices derived from all chromatin features at cCRE regions. The yellow box signifies the rotation matrix learned by PCA from the reference signal matrix. (B) Generate reference clusters based on reference data in the PCA space. Assign target data to reference clusters according to the Euclidean distance in the PCA space. The heatmap represents the average PCA signal matrix of the reference clusters derived from reference data. (C) Apply QTnorm to normalize the target signal matrix against the reference matrix within each cluster (within-cluster QTnorm). Within each cluster, the number of cCREs may vary between the reference and target samples. (D) Reconstruct the JMnorm-normalized target signal matrix in the original signal space. The yellow box indicates the transposed rotation matrix learned by PCA in the first step (Panel A).
+![logo](https://raw.githubusercontent.com/guanjue/JMnorm/master/Figs/JMnorm.Figures1.png)
+An overview of the four key steps in the JMnorm normalization procedure. (A) Step 1: orthogonal transformation. The correlated components of various epigenetic signals are transformed into mutually independent high-dimensional PCA dimensions. Each colored block on the left represents the signal vector of all epigenetic features at the nref or ntar cCRE regions in reference or target sample, respectively. Colored blocks on the right denote corresponding transformed PCA epigenetic signal matrices for reference and target samples. The yellow box in the middle represents the PCA rotation matrix learned from the reference signal matrix. (B) Step 2: cCRE clustering. Reference cCRE clusters are generated based on the reference data in PCA space with the average signal reference matrix shown as a heatmap. Target cCREs are assigned to reference clusters according to the Euclidean distances between the signal vector of the target cCRE and the average signal vectors of reference clusters in the PCA space. Within each cluster, the number of cCREs, shown as colored blocks within the insert, may vary between the reference and target samples. (C) Step 3: within-cluster normalization. Target signal matrix is normalized against the reference matrix using within-cluster quantile normalization as shown for Cluster k. (D) Step4: reconstruction of the JMnorm-normalized target signal matrix in the original signal space. The yellow box in the middle indicates the transposed PCA rotation matrix learned in the first step (panel A).
 
 ## Requirements
 R version 4.0.0 or later
@@ -124,6 +124,9 @@ cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 # change the file path to the "JMnorm/test_data/K562.raw_sigmat.mk.cor.txt" file
 # Run the commands in the "JMnorm/bin/shinyApp.show.ENCODE.heatmap.R" in R studio
 ```
+![logo](https://raw.githubusercontent.com/guanjue/JMnorm/master/Figs/JMnorm.S7.png)
+(A) The Pearson correlation matrix of 538 epigenetic features in K562 cells. (B) The ShinyApp visualization tool designed to aid in searching and visualization of a subset of features from the afore-mentioned correlation matrix.
+
 
 ## Support
 For questions or issues, please either create an issue on the GitHub repository or feel free to reach out via the following email addresses: gxiang@camp4tx.com, guanjuexiang@gmail.com
