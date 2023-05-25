@@ -120,9 +120,11 @@ cCREids	ATAC	H3K27ac	H3K27me3	H3K36me3	H3K4me1	H3K4me3	H3K9me3
 ## Visualizing cross-feature correlation matrix in K562 by ShinyApp
 - Since JMnorm normalizes epigenetic data by leveraging information from functionally correlated epigenetic features, we anticipate that simultaneous normalization of highly correlated features can yield better improvements with JMnorm. To help users more effectively select features with better correlations for JMnorm analyses, we computed pairwise cross-feature correlations for 538 epigenetic features in K562 cells using data from the ENCODE Consortium. Considering the substantial size of the output correlation matrix and the difficulties with visualization, we also set up a ShinyApp visualization tool for convenient and interactive exploration of the correlation matrix.
 ```
-# open "JMnorm/bin/shinyApp.show.ENCODE.heatmap.R" in R studio
-# change the file path to the "JMnorm/test_data/K562.raw_sigmat.mk.cor.txt" file
-# Run the commands in the "JMnorm/bin/shinyApp.show.ENCODE.heatmap.R" in R studio
+# 1, Open RStudio: Launch RStudio on your computer.
+# 2, Access the R script: Locate and open the R script named shinyApp.show.ENCODE.heatmap.R which is situated in the JMnorm/bin/ directory.
+# 3, Modify the File Path: Inside this script, you need to adjust the file path to the data file you want to use. Change the existing path to point to the K562.raw_sigmat.mk.cor.txt file located in the JMnorm/test_data/ directory.
+# 4, Execute the Script: After modifying the file path, you can run the script in RStudio. You can do this by clicking on the "Run" button, or by using the shortcut key (usually Ctrl+Enter or Cmd+Return).
+# By following these steps, the script should launch a interactive ShinyApp paper, and you should be able to selecting a subset of epigenetic features and view their K562 correlation heatmap. If you run into any issues, ensure that the file paths are correct and that the necessary data files are present in the specified directories.
 ```
 ![logo](https://raw.githubusercontent.com/guanjue/JMnorm/master/Figs/JMnorm.S7.png)
 (A) The Pearson correlation matrix of 538 epigenetic features in K562 cells. (B) The ShinyApp visualization tool designed to aid in searching and visualization of a subset of features from the afore-mentioned correlation matrix.
