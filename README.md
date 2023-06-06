@@ -135,7 +135,7 @@ For questions or issues, please either create an issue on the GitHub repository 
 
 
 ## LICENSE
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/guanjue/JMnorm/blob/main/LICENSE) file for details.
+This project is licensed under the GPL2 License. See the [LICENSE](https://github.com/guanjue/JMnorm/blob/main/LICENSE) file for details.
 
 
 
